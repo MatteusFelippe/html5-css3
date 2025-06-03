@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <style>
+        /*Seletor Especial*/
+        @font-face {
+            /*Cria uma fonte personalizada */
+            font-family: 'Delirio Perfeito';
+            src: url('fonts/Perfect Delight 1992.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+            /*Tipos de format
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg
+
+            Para adicionar mais de um arquivo, separar com virgula
+            */
+        }
+
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1 {
+            font-family: 'Delirio Perfeito', Times, serif;
+            font-size: 3em;
+            font-weight: normal;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Olá Mundo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus fugiat quod illum reprehenderit, rem
+        distinctio ab dicta placeat, ex nobis tempora rerum ipsam ea mollitia eos nihil, quibusdam voluptatibus magnam.
+    </p>
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Gradiente</title>
+    <style>
+        /*Para que o linear-gradient funcione, seletor global abaixo */
+        * {
+            height: 100%;
+        }
+
+        .linear {
+            /*Fixa o fundo*/
+            background-attachment: fixed;
+            background-image: linear-gradient(to bottom, #4FFFDC 10%, #3FCCB0, #3d8577);
+            /* linear-gradient tambem pode ser em graus ex: 90deg, e pode ter quantas cores quiser, variando da primeira para a ultima; porcentagens é porcentagem da tela da cor */
+        }
+
+        .radial {
+            background-attachment: fixed;
+            background-image: radial-gradient(circle, #d6b523, #857a17, #2b2c03);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="linear">
+        <h1>Testando Gradiente 1</h1>
+    </div>
+    <div class="radial">
+        <h1>Testando Gradiente 2</h1>
+    </div>
+</body>
+
+</html>

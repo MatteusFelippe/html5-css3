@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+
+<body>
+    <h1>
+        Imagens Dinâmicas
+    </h1>
+
+    <p>Abra esse site em varios dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador
+    </p>
+
+    <picture>
+        <!-- Sources devem ficar sempre um acima do outro, com a imagem principal no final-->
+        <source media="(max-width: 750px)" srcset="imagens/img-300x300.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/Galeria-Biodiversidad-canal-700x700.jpg" type="image/png">
+        <!-- Carrega a foto grande, se o tamanho da tela for menos de 1000px, carrega a foto média (acima)-->
+        <img src="imagens/img1000x1000.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <audio src="midia/Doja Cat - Vegas.mp3" autoplay controls></audio>
+
+    <!-- Outra forma-->
+    <audio preload="metadata" autoplay controls loop>
+        <!-- Faz como um if, se nao conseguir carregar o primeiro vai tentando nos debaixo-->
+        <source src="midia/Doja Cat - Vegas.mp3" type="audio/mpeg">
+        <!--Supondo que tenha o arq em outras extensoes-->
+        <source src="midia/Doja Cat - Vegas.ogg" type="audio/ogg">
+        <source src="midia/Doja Cat - Vegas.wav" type="audio/wav">
+        <!-- Tentar evitar wav, pois é muito pesado-->
+        <p>Infelizmente seu navegador nao consegue reproduzir audio, <a href="midia/Doja Cat - Vegas.mp3"> clique aqui
+                para baixar o arquivo mp3</a></p>
+    </audio>
+
+
+</body>
+
+</html>

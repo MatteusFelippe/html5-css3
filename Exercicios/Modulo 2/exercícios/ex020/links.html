@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* PseudoClasses (:) */
+        a:hover {
+            text-decoration: underline;
+            color: yellow;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        a:active {
+            color: blue;
+        }
+
+        /* Pseudoelemento (::) */
+        a::after {
+            content: '[link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: purple;
+        }
+
+        .especial {
+            font-size: 20px;
+        }
+
+        .especial::before {
+            content: '[especial]';
+            color: green;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://www.google.com" target="_blank">Github</a></li>
+        <li><a href="https://www.youtube.com" class="especial">Youtube</a></li>
+        <li><a href="https://www.github.com">Site</a></li>
+    </ul>
+</body>
+
+</html>

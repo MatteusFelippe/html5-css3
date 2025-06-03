@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        body {
+            /*Fontes que existam no dispositivo*/
+            font-family: Arial, Helvetica, sans-serif;
+            
+            /* Tamanhos de fontes
+            Medidas Absolutas
+            cm, mm, in, px, pt, pc
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            */
+            font-size: 1em;
+
+            /*Peso da fonte*/
+            font-weight: normal;
+            /*Variação descritiva: lighter normal bold bolder*/
+            /*Variação númerica : 100 a 900*/
+
+            font-style: normal;
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            /*font-family: 'Times New Roman', Times, serif; */
+
+            /*font-style + font-weight + font-size + font-family = font */
+            /*      1º          2º          3º          4º */
+            font: italic bolder 3em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perferendis reiciendis numquam nemo nulla quasi,
+        optio nostrum laudantium praesentium adipisci sunt iste itaque nisi accusamus magni cupiditate delectus deleniti
+        sapiente. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat, ducimus? Quia reprehenderit
+        repellat assumenda nesciunt tempora. Dolor mollitia id ratione ducimus aperiam dignissimos in distinctio, esse
+        quisquam, voluptatem error pariatur!</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint perferendis reiciendis numquam nemo nulla quasi,
+        optio nostrum laudantium praesentium adipisci sunt iste itaque nisi accusamus magni cupiditate delectus deleniti
+        sapiente.</p>
+</body>
+
+</html>
