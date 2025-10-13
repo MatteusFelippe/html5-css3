@@ -13,6 +13,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         th,
@@ -32,6 +33,20 @@
         tfoot {
             background-color: grey;
             color: white;
+        }
+
+        thead>tr>th {
+            /* Para fixar o cabeçalho da tabela no topo da página */
+            position: sticky;
+            top: -1px;
+            background-color: grey;
+        }
+
+        /* De 2 em duas, todo filho possui a característica */
+        tbody>tr:nth-child(2n) {
+            /* Tambem pode ser even (pares) ou odd (impares) */
+            background-color: lightgray;
+            font-weight: bold;
         }
 
         td.num {
@@ -56,8 +71,8 @@
         </caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -90,15 +105,110 @@
                 <td>...</td>
                 <td>...</td>
             </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213 421 037</strong></td>
             </tr>
         </tfoot>
-
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium deleniti excepturi magnam adipisci nam
+        obcaecati iste commodi ad. Officia, consectetur cum! Quas voluptatibus architecto temporibus culpa nesciunt
+        fugit sapiente.
+        In rem similique tenetur omnis necessitatibus. Consequuntur deleniti saepe maiores. Iure repellat totam rem
+        porro perspiciatis earum, maiores minima aperiam consequatur provident laboriosam velit, magni accusamus.
+        Impedit ratione sint autem!
+        Iste rerum aperiam nulla veritatis doloribus possimus aut, qui dolor. Adipisci tenetur architecto ducimus omnis
+        dolorem ipsa, necessitatibus dolor nemo odit blanditiis. Dolorum consectetur necessitatibus laudantium
+        cupiditate, quia ipsum reiciendis.
+        Asperiores reprehenderit voluptates tempore voluptatibus blanditiis. Numquam culpa enim eum magni placeat
+        architecto aliquam ab? Cupiditate rerum non ipsa explicabo sequi autem nostrum, dicta laborum vel minus
+        dignissimos nesciunt error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum
+        recusandae adipisci expedita minima consequuntur impedit iste nesciunt commodi aliquam deserunt, vitae non qui
+        animi maxime. Quo rerum non aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium deleniti excepturi magnam adipisci nam
+        obcaecati iste commodi ad. Officia, consectetur cum! Quas voluptatibus architecto temporibus culpa nesciunt
+        fugit sapiente.
+        In rem similique tenetur omnis necessitatibus. Consequuntur deleniti saepe maiores. Iure repellat totam rem
+        porro perspiciatis earum, maiores minima aperiam consequatur provident laboriosam velit, magni accusamus.
+        Impedit ratione sint autem!
+        Iste rerum aperiam nulla veritatis doloribus possimus aut, qui dolor. Adipisci tenetur architecto ducimus omnis
+        dolorem ipsa, necessitatibus dolor nemo odit blanditiis. Dolorum consectetur necessitatibus laudantium
+        cupiditate, quia ipsum reiciendis.
+        Asperiores reprehenderit voluptates tempore voluptatibus blanditiis. Numquam culpa enim eum magni placeat
+        architecto aliquam ab? Cupiditate rerum non ipsa explicabo sequi autem nostrum, dicta laborum vel minus
+        dignissimos nesciunt error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum
+        recusandae adipisci expedita minima consequuntur impedit iste nesciunt commodi aliquam deserunt, vitae non qui
+        animi maxime. Quo rerum non aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium deleniti excepturi magnam adipisci nam
+        obcaecati iste commodi ad. Officia, consectetur cum! Quas voluptatibus architecto temporibus culpa nesciunt
+        fugit sapiente.
+        In rem similique tenetur omnis necessitatibus. Consequuntur deleniti saepe maiores. Iure repellat totam rem
+        porro perspiciatis earum, maiores minima aperiam consequatur provident laboriosam velit, magni accusamus.
+        Impedit ratione sint autem!
+        Iste rerum aperiam nulla veritatis doloribus possimus aut, qui dolor. Adipisci tenetur architecto ducimus omnis
+        dolorem ipsa, necessitatibus dolor nemo odit blanditiis. Dolorum consectetur necessitatibus laudantium
+        cupiditate, quia ipsum reiciendis.
+        Asperiores reprehenderit voluptates tempore voluptatibus blanditiis. Numquam culpa enim eum magni placeat
+        architecto aliquam ab? Cupiditate rerum non ipsa explicabo sequi autem nostrum, dicta laborum vel minus
+        dignissimos nesciunt error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum
+        recusandae adipisci expedita minima consequuntur impedit iste nesciunt commodi aliquam deserunt, vitae non qui
+        animi maxime. Quo rerum non aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium deleniti excepturi magnam adipisci nam
+        obcaecati iste commodi ad. Officia, consectetur cum! Quas voluptatibus architecto temporibus culpa nesciunt
+        fugit sapiente.
+        In rem similique tenetur omnis necessitatibus. Consequuntur deleniti saepe maiores. Iure repellat totam rem
+        porro perspiciatis earum, maiores minima aperiam consequatur provident laboriosam velit, magni accusamus.
+        Impedit ratione sint autem!
+        Iste rerum aperiam nulla veritatis doloribus possimus aut, qui dolor. Adipisci tenetur architecto ducimus omnis
+        dolorem ipsa, necessitatibus dolor nemo odit blanditiis. Dolorum consectetur necessitatibus laudantium
+        cupiditate, quia ipsum reiciendis.
+        Asperiores reprehenderit voluptates tempore voluptatibus blanditiis. Numquam culpa enim eum magni placeat
+        architecto aliquam ab? Cupiditate rerum non ipsa explicabo sequi autem nostrum, dicta laborum vel minus
+        dignissimos nesciunt error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum
+        recusandae adipisci expedita minima consequuntur impedit iste nesciunt commodi aliquam deserunt, vitae non qui
+        animi maxime. Quo rerum non aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium deleniti excepturi magnam adipisci nam
+        obcaecati iste commodi ad. Officia, consectetur cum! Quas voluptatibus architecto temporibus culpa nesciunt
+        fugit sapiente.
+        In rem similique tenetur omnis necessitatibus. Consequuntur deleniti saepe maiores. Iure repellat totam rem
+        porro perspiciatis earum, maiores minima aperiam consequatur provident laboriosam velit, magni accusamus.
+        Impedit ratione sint autem!
+        Iste rerum aperiam nulla veritatis doloribus possimus aut, qui dolor. Adipisci tenetur architecto ducimus omnis
+        dolorem ipsa, necessitatibus dolor nemo odit blanditiis. Dolorum consectetur necessitatibus laudantium
+        cupiditate, quia ipsum reiciendis.
+        Asperiores reprehenderit voluptates tempore voluptatibus blanditiis. Numquam culpa enim eum magni placeat
+        architecto aliquam ab? Cupiditate rerum non ipsa explicabo sequi autem nostrum, dicta laborum vel minus
+        dignissimos nesciunt error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum
+        recusandae adipisci expedita minima consequuntur impedit iste nesciunt commodi aliquam deserunt, vitae non qui
+        animi maxime. Quo rerum non aliquid.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias praesentium deleniti excepturi magnam adipisci nam
+        obcaecati iste commodi ad. Officia, consectetur cum! Quas voluptatibus architecto temporibus culpa nesciunt
+        fugit sapiente.
+        In rem similique tenetur omnis necessitatibus. Consequuntur deleniti saepe maiores. Iure repellat totam rem
+        porro perspiciatis earum, maiores minima aperiam consequatur provident laboriosam velit, magni accusamus.
+        Impedit ratione sint autem!
+        Iste rerum aperiam nulla veritatis doloribus possimus aut, qui dolor. Adipisci tenetur architecto ducimus omnis
+        dolorem ipsa, necessitatibus dolor nemo odit blanditiis. Dolorum consectetur necessitatibus laudantium
+        cupiditate, quia ipsum reiciendis.
+        Asperiores reprehenderit voluptates tempore voluptatibus blanditiis. Numquam culpa enim eum magni placeat
+        architecto aliquam ab? Cupiditate rerum non ipsa explicabo sequi autem nostrum, dicta laborum vel minus
+        dignissimos nesciunt error! Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolorum
+        recusandae adipisci expedita minima consequuntur impedit iste nesciunt commodi aliquam deserunt, vitae non qui
+        animi maxime. Quo rerum non aliquid.</p>
 </body>
 
 </html>
