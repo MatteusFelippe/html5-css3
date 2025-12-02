@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" autocomplete="off" method="POST">
+        <!--method padrão: 
+            GET - Mostra os dados na url, limitado a 3 mil bytes e dados não sensíveis
+            POST - Para enviar os dados com mais segurança, sem mostrar na url, mas ainda acessíveis na requisição 
+        -->
+        <p><label for="id_nome">Nome:</label>
+            <input type="text" name="nome" id="id_nome">
+        </p> <!-- Name se refere à como será tratado -->
+        <p><label for="id_sobrenome">Sobrenome: </label>
+            <input type="text" name="sobrenome" id="id_sobrenome">
+        </p>
+        <p><input type="submit" value="Enviar"></p> <!-- Botao de enviar (submit do formulário) -->
+    </form>
+</body>
+
+</html>

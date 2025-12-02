@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="id_nome">Usuário:</label>
+            <input type="text" name="nome" id="id_nome" required minlength="5"
+                placeholder="Texto padrão p/ ser mostrado" autocomplete="username">
+            <!-- Campo obrigatório com tamanho mínimo 5 -->
+        </p>
+        <p>
+            <label for="id_senha">Senha:</label>
+            <input type="password" name="senha" id="id_senha" required maxlength="8" size="10" placeholder="Senha"
+                autocomplete="current-password">
+            <!-- Campo obrigatório de senha com tamanho máximo 8 e com o tamanho p/ caber 10 letras-->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar"> <!-- Botão para limpar campos do form -->
+        </p>
+    </form>
+</body>
+
+</html>
