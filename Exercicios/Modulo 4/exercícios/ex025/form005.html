@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+
+<body>
+    <h1>Exemplo de forms</h1>
+    <form action="cadastro.php" method="get">
+        <fieldset>
+            <legend>Sexo</legend>
+            <!-- No radio, botões devem ter o mesmo name -->
+            <input type="radio" name="sexo" id="sexo_masc_id" value="M"> <label for="sexo_masc_id">Masculino</label>
+            <br>
+            <input type="radio" name="sexo" id="sexo_fem_id" checked value="F"> <label
+                for="sexo_fem_id">Feminino</label>
+            <!-- checked p/ já carrega opção marcarda -->
+        </fieldset>
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+
+            <label for="esporte_futebol_id"><input type="checkbox" name="esporte_futebol" id="esporte_futebol_id">
+                Futebol</label> <br>
+            <label for="esporte_basquete_id"><input type="checkbox" name="esporte_basquete" id="esporte_basquete_id"
+                    checked>
+                Basquete</label> <br>
+            <label for="esporte_natacao_id"><input type="checkbox" name="esporte_natacao" checked
+                    id="esporte_natacao_id">
+                Natação</label> <br>
+            <label for="esporte_tennis_id"><input type="checkbox" name="esporte_tennis" id="esporte_tennis_id">
+                Tennis</label> <br>
+        </fieldset>
+        <!-- Para não enviar 'on' no radio e checkbox, colocar value IMPORTANTE -->
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+
+</body>
+
+</html>

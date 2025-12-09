@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulario</title>
+</head>
+
+<body>
+    <form action="cadastro.php" method="get">
+        <fieldset> <!-- P/ organizar grupos de campos -->
+            <legend>Dados pessoais</legend> <!-- Legenda do grupo -->
+            <p>
+                <label for="id_nome">Nome</label>
+                <input type="text" name="nome" id="id_nome" required minlength="5" maxlenght="20">
+            </p>
+            <p>
+                <label for="id_email">Email:</label>
+                <input type="email" name="email" id="id_email" required autocomplete="email">
+            </p>
+            <p>
+                <label for="id_telefone">Telefone:</label>
+                <input type="tel" name="telefone" id="id_telefone" required pattern="^\([0-9]{2}\)[0-9]{4,5}-[0-9]{4}$"
+                    placeholder="(xx)xxxx-xxxx">
+                <!-- forma alternativa da regexp de telefone:
+                 "^\(\d{2}\)\d{4,5}-\d{4}$" -->
+                <!-- Pattern é para inserir expressões regulares -->
+            </p>
+        </fieldset>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+
+</html>
