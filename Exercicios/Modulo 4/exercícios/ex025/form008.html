@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+
+<body>
+    <form action="cadastro.php" method="get">
+
+        <p>
+            <label for="id_n1">Número 1</label>
+            <input type="number" id="id_n1" name="n1" min="0" max="50" required
+                oninput="id_soma.innerHTML = Number(id_n1.value) + Number(id_n2.value)"> <!-- JS p/somar -->
+        </p>
+
+        <p>
+            <label for="id_n2">Número 2</label>
+            <input type="number" id="id_n2" name="n2" min="0" max="50" required
+                oninput="id_soma.innerHTML = Number(id_n1.value) + Number(id_n2.value)"> <!-- JS p/somar -->
+        </p>
+
+        <p>
+            <label for="id_soma">Soma</label>
+            <output name="soma" id="id_soma">0</output> <!-- Tag output mostra valores na tela de acordo com eventos -->
+            <!-- Não é enviada no form, somente p/ mostrar coisas na tela -->
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+
+</html>
