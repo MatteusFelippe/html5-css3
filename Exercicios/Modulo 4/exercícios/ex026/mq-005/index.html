@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="itens">
+            <ul>
+                <li><a href="#">Opção 1</a></li>
+                <li><a href="#">Opção 2</a></li>
+                <li><a href="#">Opção 3</a></li>
+                <li><a href="#">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Testando media queries</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error laboriosam deleniti ducimus rerum
+                deserunt dignissimos consequatur voluptatem magnam id soluta cupiditate delectus eum facere nihil
+                minima, voluptas enim, magni impedit.
+                Maiores dolor sunt soluta nihil tenetur, sit repellat, corrupti esse, laudantium perspiciatis ullam eos
+                alias mollitia repellendus facilis dicta ut quo ratione doloribus similique recusandae. Earum quidem
+                impedit delectus hic!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum vitae magni modi dolores!
+                Veniam facere id commodi velit culpa, autem tempore ut cupiditate dolorum molestias! Officia a corrupti
+                laudantium.
+                Vel autem quod accusamus alias impedit tempore adipisci aut! Nobis, voluptatem? Consequuntur autem dicta
+                a dolore odit recusandae perferendis reiciendis, voluptate mollitia adipisci porro maiores ad eum
+                expedita, dolor odio.
+                Iste, ratione ea totam distinctio doloremque repellendus omnis dolorum doloribus nihil voluptatum unde
+                animi dolore, quas aspernatur modi ipsa architecto natus? Maxime quidem numquam rerum quam accusantium
+                consequatur ullam aspernatur.</p>
+        </article>
+    </main>
+    <script>
+        //Função abaixo so funciona aqui dentro
+        function clickMenu() {
+            if (itens.style.display == 'block') {
+                itens.style.display = 'none'
+            } else {
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+
+</html>
